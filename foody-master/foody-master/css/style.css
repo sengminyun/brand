@@ -115,7 +115,7 @@ textarea.form-control {
 
 /* Header */
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -175,7 +175,7 @@ header .navbar .nav-link {
   padding: 1.7rem 1rem;
   outline: none !important;
   font-size: 1rem;
-  color: white !important;
+  color: black !important;
 }
 
 @media (max-width: 1199px) {

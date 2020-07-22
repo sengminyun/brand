@@ -1,0 +1,25 @@
+header{
+    /* position: absolute; */
+    width: 100%;
+    z-index: 5;
+}
+header .navbar-brand{
+    font-size: 2rem;
+    letter-spacing:.2em;
+    font-weight: 500;
+}
+
+.home-slider, .slider-item{
+    height: 100vh;
+}
+
+.item1{
+    background:url(../images/main1.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.item2{
+    background:url(../images/main2.jpg);
+    background-position: top;
+    background-size: cover;
+}
