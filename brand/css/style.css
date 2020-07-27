@@ -25,18 +25,7 @@ html {
   h1, h2, h3, h4, h5 {
     color: #000;
   }
-
-  /* .btn, .form-control {
-    outline: none;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border-radius: 0px !important;
-  }
-  
-  .btn:focus, .btn:active, .form-control:focus, .form-control:active {
-    outline: none;
-  } */
-  
+ 
   .form-control {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -52,50 +41,7 @@ html {
     height: inherit;
   }
   
-  .btn {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-  }
-  
-  .btn.btn-primary {
-    color: #fff;
-    border-width: 2px;
-  }
-  
-  .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-    border-color: #ff9037;
-    background: #ff9037;
-  }
-  
-  .btn.btn-sm {
-    font-size: 12px;
-  }
-  
-  .btn.btn-outline-primary {
-    border-width: 2px;
-    color: #ff7404;
-  }
-  
-  .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
-    color: #fff;
-  }
-  
-  .btn.btn-outline-white {
-    border-width: 2px;
-    border-color: #fff;
-    color: #fff;
-  }
-  
-  .btn.btn-outline-white:hover, .btn.btn-outline-white:focus {
-    background: #fff;
-    color: #000 !important;
-    border-width: 2px;
-  }
-  
-  .btn:hover {
-    text-decoration: none;
-  }
+
   
   /* Header */
   header {
