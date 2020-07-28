@@ -1508,6 +1508,7 @@ html {
   .text-primary{
       color:black !important;
     }
+
     .wrap-icon {
         width: 80px;
         height: 80px;
@@ -1678,7 +1679,4 @@ html {
   .categories li.active a, .sidelink li.active a {
     color: #000;
     font-style: italic;
-  }
-  .ion-camera{
-    font-size: 32px;
   }
