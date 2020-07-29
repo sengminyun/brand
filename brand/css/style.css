@@ -1,6 +1,3 @@
-@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Arita-buri-SemiBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-
 
 
 
@@ -183,7 +180,15 @@ html {
   .half .text, .half .image {
     width: 50%;
   }
-  
+  .slider-text h1{
+    font-size:4rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .slider-text h3{
+    color: #fff;
+    font-size:1.5rem;
+  }
   @media (max-width: 991px) {
     .half .text, .half .image {
       width: 100%;
@@ -619,7 +624,7 @@ html {
     color: #fff;
   }
   
-  .owl-carousel.home-slider .slider-item .slider-text h1, .owl-carousel.home-slider-loop-false .slider-item .slider-text h1 {
+  .owl-carousel.home-slider .slider-item, .owl-carousel.home-slider-loop-false .slider-item  {
     font-size: 5rem;
     color: #fff;
     line-height: 1.2;
@@ -628,7 +633,7 @@ html {
   }
   
   @media (max-width: 991px) {
-    .owl-carousel.home-slider .slider-item .slider-text h1, .owl-carousel.home-slider-loop-false .slider-item .slider-text h1 {
+    .owl-carousel.home-slider .slider-item, .owl-carousel.home-slider-loop-false .slider-item{
       font-size: 40px;
     }
   }
@@ -751,7 +756,7 @@ html {
     color: #fff;
   }
   
-  .slider-item .slider-text h1 {
+  .slider-item{
     font-size: 5rem;
     color: #fff;
     line-height: 1.2;
@@ -760,7 +765,7 @@ html {
   }
   
   @media (max-width: 991px) {
-    .slider-item .slider-text h1 {
+    .slider-item{
       font-size: 40px;
     }
   }
