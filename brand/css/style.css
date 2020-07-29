@@ -1,3 +1,9 @@
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Arita-buri-SemiBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+
+
 html {
     overflow-x: hidden;
   }
@@ -5,10 +11,10 @@ html {
   body {
     background: #fff;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
     color: #868e96;
+
   }
   
   a {
@@ -107,9 +113,6 @@ html {
       font-size: 1rem;
       color: white !important;
     }
-    .nav-link:hover{
-        border-bottom: 1px solid #fff;
-    }
   header .navbar {
     padding: 1.7rem 1rem;
     outline: none !important;
@@ -137,7 +140,7 @@ html {
     }
   }
   
-  header .navbar .dropdown-menu .dropdown-item:hover {
+  /* header .navbar .dropdown-menu .dropdown-item:hover {
     background: #ff7404;
     color: #fff;
   }
@@ -150,7 +153,7 @@ html {
   header .navbar .dropdown-menu a {
     padding-top: 7px;
     padding-bottom: 7px;
-  }
+  } */
   
   header .navbar .cta-btn a {
     background: #ff7404;
@@ -205,7 +208,9 @@ html {
   .section-heading h2 {
     font-size: 50px;
   }
-  
+  .bg-image{
+    background: #fba259;
+  }
   .section-heading .small-sub-heading {
     font-size: 14px;
     color: #ff7404;
@@ -401,7 +406,9 @@ html {
   .sched .text, .sched .bg-image, .blog .text, .blog .bg-image {
     width: 100%;
   }
-  
+
+
+
   @media (min-width: 992px) {
     .sched .text, .sched .bg-image, .blog .text, .blog .bg-image {
       width: 50%;
@@ -416,10 +423,7 @@ html {
     padding: 30px;
   }
   
-  .sched .sched-time, .blog .sched-time {
-    font-size: 13px;
-    color: #999999;
-  }
+
   
   .sched .bg-image, .blog .bg-image {
     background-size: cover;
