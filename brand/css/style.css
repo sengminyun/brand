@@ -181,17 +181,25 @@ html {
     width: 50%;
   }
   .slider-text h1{
+    padding-top: 70%;
     font-size:4rem;
     font-weight: bold;
     color: #fff;
   }
   .slider-text h3{
     color: #fff;
-    font-size:1.5rem;
+    font-size:2rem;
   }
   @media (max-width: 991px) {
     .half .text, .half .image {
       width: 100%;
+    }
+    .slider-text{
+      text-align: center;
+    }
+    .slider-text h1{
+      padding-top:90%;
+      font-size: 3rem;
     }
   }
   
@@ -419,17 +427,40 @@ html {
       width: 50%;
     }
   }
-  
+  .bg1{
+    background: url(../images/sec05-img1.jpg);
+  }
+  .bg2{
+    background: url(../images/sec05-img2.jpg);
+  }
   .sched h3, .blog h3 {
     font-size: 20px;
   }
-  
-  .sched .text, .blog .text {
+  .sched .text {
     padding: 30px;
   }
-  
-
-  
+  .blog .text{
+    padding: 10px 20px ;
+  }
+  .more{
+    width:20%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25%;
+  }
+  .more p{
+    margin: 0;
+    color: #fff;
+    font-size:1.5rem;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  .bg-black{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: none;
+  }
   .sched .bg-image, .blog .bg-image {
     background-size: cover;
     background-position: center center;

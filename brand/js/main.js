@@ -226,3 +226,15 @@ AOS.init({
 
 
 })(jQuery);
+$('.bg1').mouseover(function(){
+  $('.bg1-more').stop().fadeIn();
+});
+$('.bg1').mouseleave(function(){
+  $('.bg1-more').stop().fadeOut();
+});
+$('.bg2').mouseover(function(){
+  $('.bg2-more').stop().fadeIn();
+});
+$('.bg2').mouseleave(function(){
+  $('.bg2-more').stop().fadeOut();
+});
