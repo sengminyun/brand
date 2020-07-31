@@ -69,6 +69,7 @@ html {
   }
   .navbar-brand:before{
     content: 'J';
+    color: #ff7404;
   }
   header .navbar-brand.absolute {
     position: absolute;
@@ -107,8 +108,12 @@ html {
   .nav-link{
       padding: .5rem 1rem;
       outline: none !important;
-      font-size: 1rem;
+      font-size: 1.3rem !important;
       color: white !important;
+      transition: .5s;
+    }
+    .nav-link:hover{
+      font-weight:800;
     }
   header .navbar {
     padding: 1.7rem 1rem;
@@ -124,7 +129,7 @@ html {
   }
   
   header .navbar .nav-link.active {
-    color: #ff7404 !important;
+    color: #fff !important;
   }
   
 
@@ -1720,3 +1725,8 @@ html {
     color: #000;
     font-style: italic;
   }
+
+
+.news-t{
+  padding-top: 60%;
+}
