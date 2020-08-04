@@ -84,7 +84,6 @@ html {
   header .navbar-brand span {
     color: #ff7404;
   }
-  
   @media (min-width: 768px) {
     header .navbar-brand span {
       color: #ced4da;
@@ -104,7 +103,6 @@ html {
       background: none !important;
       position: relative;
     }
-  }
   .nav-link{
       padding: .5rem 1rem;
       outline: none !important;

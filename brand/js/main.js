@@ -238,3 +238,4 @@ $('.bg2').mouseover(function(){
 $('.bg2').mouseleave(function(){
   $('.bg2-more').stop().fadeOut();
 });
+
