@@ -239,3 +239,10 @@ $('.bg2').mouseleave(function(){
   $('.bg2-more').stop().fadeOut();
 });
 
+
+$(function(){
+  $('.nav-link').mouseover(function(){
+    $('.navbar').css('background','black');
+  });
+});
+

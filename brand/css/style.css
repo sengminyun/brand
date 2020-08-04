@@ -102,7 +102,7 @@ html {
       padding-top: 0;
       padding-bottom: 0;
       background: none !important;
-      position: relative;
+      /* position: relative; */
     }
   .nav-link{
       padding: .5rem 1rem;
