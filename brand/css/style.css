@@ -14,9 +14,12 @@ html {
     color: #868e96;
 
   }
-  @media (max-width:376px){
+  @media (max-width:375px){
     body{
       width: 100%;
+    }
+    .bg-black{
+      display: block;
     }
   }
   a {
@@ -108,6 +111,8 @@ html {
   }
   .item1{
       background: url(../images/main1.jpg);
+      background-position: top;
+      background-size: cover;
   }
   .item2{
       background: url(../images/main2.jpg);
