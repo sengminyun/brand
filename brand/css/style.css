@@ -100,7 +100,13 @@ html {
     color: #fff;
     font-size: 1.5rem;
     opacity: 0.7;
-    transition: 0.5s;
+    
+  }
+  .bg{
+    background: #fff !important;
+  }
+  .nav{
+    position: fixed;
   }
   .nav-link:hover{
     font-weight:700;
