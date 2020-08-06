@@ -18,9 +18,7 @@ html {
     body{
       width: 100%;
     }
-    .bg-black{
-      display: block;
-    }
+    
   }
   a {
     -webkit-transition: .3s all ease;
@@ -115,12 +113,10 @@ html {
     color: #ff7404 !important;
     opacity: 1;
   }
-  .item1{
+  .main1{
       background: url(../images/main1.jpg);
-      background-position: top;
-      background-size: cover;
   }
-  .item2{
+  .main2{
       background: url(../images/main2.jpg);
   }
   .half .text, .half .image {
@@ -215,16 +211,32 @@ html {
     position: relative;
     display: block;
     overflow: hidden;
+    height: 600px;
   }
-  
-  .item-dishes img {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s all ease-out;
-    -o-transition: .3s all ease-out;
-    transition: .3s all ease-out;
-    z-index: 1;
+  .item1{
+    background: url(../images/sec04-img1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item2{
+    background: url(../images/sec04-img2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item3{
+    background: url(../images/sec04-img3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item4{
+    background: url(../images/sec04-img4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item5{
+    background: url(../images/sec04-img5.jpg);
+    background-size: cover;
+    background-position: center;
   }
   
   .item-dishes:before {
