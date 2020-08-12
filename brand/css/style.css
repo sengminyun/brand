@@ -92,9 +92,9 @@ html {
     content:'J';
     color: #ff7404;
   }
-  .navbar:hover{
+  /* .navbar:hover{
     background:#fff !important;
-  }
+  } */
   .nav-link{
     color: #fff;
     font-size: 1.5rem;
@@ -109,6 +109,7 @@ html {
   }
   .nav-link:hover{
     font-weight:700;
+    opacity: 1;
   }
   .active{
     color: #ff7404 !important;
@@ -797,7 +798,25 @@ html {
   .slider-wrap:after {
     content: "";
     width: 100%;
-    height: 350px;
+    height: 210px;
+    background: #fff;
+    z-index: 1;
+    bottom: -210px;
+    background-color: #f8f9fa;
+    left: 0;
+    position: absolute;
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+  }
+    
+  .slider-wrap-sub:after {
+    content: "";
+    width: 100%;
+    height: 340px;
     background: #fff;
     z-index: 1;
     bottom: -210px;

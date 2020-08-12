@@ -241,21 +241,21 @@ $('.bg2').mouseleave(function(){
 
 
 
-$(function(){
-  $('.navbar').mouseover(function(){
-    $('.navbar-brand').css('color', '#000');
-    $('.nav-link').css('color','#000');
-    $('.fa-bars').css('color','#000');
-  });
-  $('.navbar').mouseleave(function(){
-    $('.navbar-brand').css('color', '#fff');
-    $('.nav-link').css('color','#fff');
-    $('.fa-bars').css('color','#fff');
-  });
-  $('.nav-link').click(function(){
-    $('.active').css('color','#ff7404')
-  });
-});
+// $(function(){
+//   $('.navbar').mouseover(function(){
+//     $('.navbar-brand').css('color', '#000');
+//     $('.nav-link').css('color','#000');
+//     $('.fa-bars').css('color','#000');
+//   });
+//   $('.navbar').mouseleave(function(){
+//     $('.navbar-brand').css('color', '#fff');
+//     $('.nav-link').css('color','#fff');
+//     $('.fa-bars').css('color','#fff');
+//   });
+//   $('.nav-link').click(function(){
+//     $('.active').css('color','#ff7404')
+//   });
+// });
 
 $(window).on("scroll", function() {
   if ($(window).scrollTop() > 200) {
