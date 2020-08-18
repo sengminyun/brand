@@ -288,4 +288,4 @@ $(window).on("scroll", function() {
     $('.fa-bars').css('color','#fff');
     $('.navbar').css('box-shadow','none');
   }
-})
+});

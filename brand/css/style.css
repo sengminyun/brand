@@ -79,7 +79,7 @@ html {
     color: #000 !important;
   }
   .navbar{
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: none !important;
     transition:0.5s;
     color: #fff;
     padding: 1rem;
@@ -100,7 +100,7 @@ html {
     color: #fff;
     font-size: 17px;
     opacity: 0.7;
-    
+    font-weight: normal;
   }
   .bg{
     background: #fff !important;
@@ -1735,4 +1735,20 @@ html {
     color: #fff;
     text-align: center;
   }
-
+  .img-box{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .gal-img1{
+    width: 100%;
+    height: 300px;
+    background: url(../images/main1.jpg);
+    background-size: cover;
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+  }
