@@ -114,7 +114,7 @@ html {
   .bg-box{
     background:url(../images/bg.jpg) no-repeat;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -1735,6 +1735,30 @@ html {
     color: #fff;
     text-align: center;
   }
+
+
+  .jb-text h4{
+    color: #fff !important;
+    padding-top:50%;
+    font-size:22px;
+  }
+  .jb-text h1{
+    font-size:72px;
+    color: #fff;
+  }
+  .bg-o{
+    width: 22%;
+    height: 45%;
+    border-radius: 100%;
+    background-color:#fff;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+  .box-center{
+    padding: 0;
+  }
+
   .img-box{
     width: 100%;
     overflow: hidden;
@@ -1745,10 +1769,4 @@ html {
     height: 300px;
     background: url(../images/main1.jpg);
     background-size: cover;
-    -webkit-transform: skewY(-6deg);
-    -ms-transform: skewY(-6deg);
-    transform: skewY(-6deg);
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
   }
