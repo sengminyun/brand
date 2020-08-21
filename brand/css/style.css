@@ -1746,19 +1746,15 @@ html {
     font-size:72px;
     color: #fff;
   }
-  .bg-o{
-    width: 22%;
-    height: 45%;
-    border-radius: 100%;
-    background-color:#fff;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-  }
+
   .box-center{
     padding: 0;
-  }
 
+  }
+  .bg-o-box{
+    background-color:#fff;
+    height: 70%;
+  }
   .img-box{
     width: 100%;
     overflow: hidden;
