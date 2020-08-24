@@ -17,8 +17,8 @@ html {
   @media (max-width:375px){
     body{
       width: 100%;
+      overflow: hidden;
     }
-    
   }
   a {
     -webkit-transition: .3s all ease;
@@ -130,6 +130,35 @@ html {
     color: #ff7404 !important;
     opacity: 1;
   }
+  @media (max-width:767px){
+    .navbar{
+      background: #fff !important;
+    }
+    .nav-link{
+      color: #000 !important;
+    }
+    .navbar-brand{
+      color: #000 !important;
+    }
+    .active{
+      color: #ff7404 !important;
+    }
+  }
+  @media (max-width:375px){
+    .navbar-brand{
+      font-size:1.3rem !important;
+    }
+    .fa-bars{
+      font-size:1.3rem;
+    }
+    .nav-link{
+      font-size:1rem;
+    }
+    .bg-box{
+      height: 300px;
+      background-position: right;
+    }
+  }
   .main1{
       background: url(../images/main1.jpg);
   }
@@ -161,21 +190,15 @@ html {
       font-size: 3rem;
     }
   }
-  @media (max-width:767px){
-    .navbar{
-      background: #fff !important;
+  @media (max-width:375px){
+    .slider-text h1{
+      font-size:2rem;
+      padding-top:100%;
     }
-    .nav-link{
-      color: #000 !important;
-    }
-    .navbar-brand{
-      color: #000 !important;
-    }
-    .active{
-      color: #ff7404 !important;
+    .slider-text h3{
+      font-size:1.3rem;
     }
   }
-  
   .half .text {
     padding: 7%;
   }
@@ -193,6 +216,17 @@ html {
   
   .section-heading h2 {
     font-size: 50px;
+  }
+  @media (max-width:375px){
+    .heading-wrap h2{
+      font-size:1.5rem !important;
+    }
+    .heading-wrap p{
+      font-size:14px;
+    }
+    .pb-0{
+      padding-top:18rem !important;
+    }
   }
   .bg-image{
     background: #fba259;
@@ -371,7 +405,19 @@ html {
   .heading-wrap .back-text-dark {
     color: #f2f2f2 !important;
   }
-  
+
+  .img-box{
+    height: 600px;
+    overflow: hidden;
+  }
+  .s3-img1{
+    background: url(../images/sec03-img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
   .lead {
     font-size: 16px;
   }
@@ -1576,6 +1622,18 @@ html {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
+  @media (max-width:375px){
+    .text-primary{
+      font-size:1rem;
+    }
+    .wrap-icon {
+      width: 60px;
+      height: 60px;
+    }
+    .wrap-icon > span {
+      font-size: 1.5rem;
+    }
+  }
   .service-block h3 {
     font-size: 1rem;
     letter-spacing: .1rem;
@@ -1751,10 +1809,7 @@ html {
     padding: 0;
 
   }
-  .bg-o-box{
-    background-color:#fff;
-    height: 70%;
-  }
+
   .img-box{
     width: 100%;
     overflow: hidden;
