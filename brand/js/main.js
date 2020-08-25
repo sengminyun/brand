@@ -53,7 +53,7 @@ AOS.init({
     smartSpeed: 1000,
     nav:true,
     autoplayHoverPause: true,
-    items: 1,
+    items: 2,
     navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
     responsive:{
       0:{
