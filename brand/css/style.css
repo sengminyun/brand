@@ -29,6 +29,7 @@ html {
   
   a:hover {
     text-decoration: none;
+    
   }
   
   h1, h2, h3, h4, h5 {
@@ -114,7 +115,7 @@ html {
   .bg-box{
     background:url(../images/bg.jpg) no-repeat;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -410,21 +411,59 @@ html {
     height: 600px;
     overflow: hidden;
   }
+  .img-box-s{
+    height: 300px;
+    overflow: hidden;
+  }
   .s3-img1{
     background: url(../images/sec03-img1.jpg);
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
+    transition: .3s;
   }
+  /* .s3-img1:hover{
+    transform: scale(1.2);
+  } */
   .s3-img2{
     background: url(../images/sec03-img2.jpg);
     width: 100%;
-    height: 48%;
+    height: 100%;
     background-position:center;
     background-size:cover;
+    transition: .3s;
   }
-
+  /* .s3-img2:hover{
+    transform: scale(1.2);
+  } */
+  .s3-img3{
+    background: url(../images/sec03-img3.jpg);
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size:cover;
+    transition: .3s;
+  }
+  /* .s3-img3:hover{
+    transform: scale(1.2);
+  } */
+  .s3-img4{
+    background: url(../images/sec03-img4.jpg);
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size:cover;
+    transition: .3s;
+  }
+  /* .s3-img4:hover{
+    transform: scale(1.2);
+  } */
+  @media(max-width:375px){
+    .img-box, .img-box-s{
+      margin-top:10px
+    }
+  }
   .lead {
     font-size: 16px;
   }
@@ -828,6 +867,7 @@ html {
   .slider-item .slider-text .child-name {
     font-size: 40px;
     color: #fff;
+    
   }
   
   .slider-item{
@@ -1256,7 +1296,7 @@ html {
     padding: 5em 0;
   }
   
-  .site-footer:before {
+  /* .site-footer:before {
     content: "";
     width: 100%;
     height: 240px;
@@ -1271,7 +1311,7 @@ html {
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left;
-  }
+  } */
   
   .site-footer p:last-child {
     margin-bottom: 0;
@@ -1560,6 +1600,7 @@ html {
   .top-slant-white {
     position: relative;
     margin-top: -200px;
+    padding-bottom: 20%;
   }
   
   /* .top-slant-white:before {
@@ -1793,15 +1834,21 @@ html {
     font-style: italic;
   }
 
-  .event-more{
-    padding: 20% 10%;
+  .beer-menu{
+    height: 300px;
+    background:url(../images/beer-main.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
-  .event-more h3, .event-more p{
-    color: #fff;
-    text-align: center;
+  .news-menu{
+    height: 300px;
+    background:#777;
+    float: right;
+    z-index: 999;
   }
-
-
+  .sec04{
+    padding: 0;
+  }
   .jb-text h4{
     color: #fff !important;
     padding-top:50%;
