@@ -115,7 +115,7 @@ html {
   .bg-box{
     background:url(../images/bg.jpg) no-repeat;
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -155,10 +155,6 @@ html {
     .nav-link{
       font-size:1rem;
     }
-    .bg-box{
-      height: 300px;
-      background-position: right;
-    }
   }
   .main1{
       background: url(../images/main1.jpg);
@@ -177,6 +173,7 @@ html {
     font-size:4rem;
     font-weight: bold;
     color: #fff;
+    line-height: ;
   }
   .slider-text h3{
     color: #fff;
@@ -414,13 +411,17 @@ html {
     height: 600px;
     overflow: hidden;
   }
+  .img-box-l{
+    height: 600px;
+    overflow: hidden;
+  }
   .img-box-s{
     height: 300px;
     overflow: hidden;
   }
   .s3-img1{
     background: url(../images/sec03-img1.jpg);
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -431,8 +432,8 @@ html {
   } */
   .s3-img2{
     background: url(../images/sec03-img2.jpg);
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     background-position:center;
     background-size:cover;
     transition: .3s;
@@ -442,29 +443,62 @@ html {
   } */
   .s3-img3{
     background: url(../images/sec03-img3.jpg);
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     background-position:center;
     background-size:cover;
     transition: .3s;
+    margin-top: 5%;
   }
   /* .s3-img3:hover{
     transform: scale(1.2);
   } */
   .s3-img4{
     background: url(../images/sec03-img4.jpg);
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-position:center;
     background-size:cover;
     transition: .3s;
+    margin-left:5%;
   }
   /* .s3-img4:hover{
     transform: scale(1.2);
   } */
   @media(max-width:375px){
-    .img-box, .img-box-s{
-      margin-top:10px
+    .img-box-l{
+      height: 300px;
+    }
+    .img-box-s{
+      height: 150px;
+    }
+    .s3-img1{
+      margin-bottom: 5px;
+      width: 100%;
+      height: 100%;
+    }
+    .s3-img2{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .s3-img3{
+      margin-top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .s3-img4{
+      margin-left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bg-sec{
+      padding:0 !important;
+    }
+    .bg-box{
+      height: 150px;
+      background-size: cover;
+      background-position: center;
     }
   }
   .lead {
@@ -914,7 +948,7 @@ html {
     background: #fff;
     z-index: 1;
     bottom: -210px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     left: 0;
     position: absolute;
     -webkit-transform: skewY(-6deg);
