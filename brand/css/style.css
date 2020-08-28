@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
+@font-face {
+  font-family: 'TTSeokbosangjeolB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.2/TTSeokbosangjeolB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 html {
@@ -384,6 +389,24 @@ html {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  .bottom-slant-white:after{
+    content: "";
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    z-index: -1;
+    bottom: -200px;
+    background-color: #fff;
+    left: 0;
+    position: absolute;
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+
   }
   
   .heading-wrap .back-text, .heading-wrap .back-text-dark {
@@ -944,7 +967,7 @@ html {
   .slider-wrap:after {
     content: "";
     width: 100%;
-    height: 210px;
+    height: 340px;
     background: #fff;
     z-index: 1;
     bottom: -210px;
@@ -966,7 +989,7 @@ html {
     background: #fff;
     z-index: 1;
     bottom: 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
     left: 0;
     position: absolute;
     -webkit-transform: skewY(-6deg);
@@ -1686,26 +1709,49 @@ html {
   .text-primary{
       color:black !important;
     }
-
+    .sec02-title{
+      padding-bottom: 3%;
+    }
     .wrap-icon {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
         margin: 0 auto;
         margin-bottom: 30px;
         border-radius: 50%;
         position: relative;
         display: block;
-        background: #ff7404;
+        border: 10px solid rgb(226, 226, 226);
+        transition: 0.3s;
       }
-      .wrap-icon > span {
-        font-size: 2rem;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+      .wrap-icon:hover{
+        border: 10px solid #ff7404;
+      }
+      .wrap-icon img{
+        margin-top:25%
+      }
+      .service-block h3:before{
+        width: 80px;
+      height: 2px;
+      background: #ff7404;
+      content: "";
+      position: absolute;
+      top: 170px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      }
+      .beer-more{
+        padding-top:10%;
+      }
+      .beer-more a{
+        color: #555;
+        font-size: 1.3rem;
+        transition:.3s;
+      }
+      .beer-more a:hover{
+        color: #000;
+        font-weight: 600;
       }
   @media (max-width:375px){
     .text-primary{
@@ -1874,18 +1920,7 @@ html {
     margin: 0 !important;
     padding: 1rem !important;
   }
-  .beer-menu{
-    height: 300px;
-    background:url(../images/beer-main.png) no-repeat;
-    background-size: cover;
-    background-position: bottom;
-  }
-  .news-menu{
-    height: 300px;
-    background:#777;
-    float: right;
-    z-index: 999;
-  }
+ 
   .sec04{
     padding: 0;
   }
@@ -1903,7 +1938,11 @@ html {
     padding: 0;
 
   }
-
+  .sec04-box{
+    background:url(../images/news2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   .img-box{
     width: 100%;
     overflow: hidden;
@@ -1914,4 +1953,136 @@ html {
     height: 300px;
     background: url(../images/main1.jpg);
     background-size: cover;
+  }
+  .news-sec, .gal-sec{
+    padding: 5rem !important;
+  }
+  .news-box{
+    height: 200px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+  }
+  .news-img1{
+    margin-top:10px;
+    height: 180px;
+    background: url(../images/news2.jpg);
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+  }
+  .news-img2{
+    margin-top:10px;
+    height: 180px;
+    padding: 0;
+  }
+  .news-img3{
+    margin-top:10px;
+    height: 180px;
+    background: url(../images/news2.jpg) !important;
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+  }
+  .news-sub{
+    padding: 3%;
+  }
+  .news-img2 h1{
+    font-weight:600;
+    padding-top: 15%;
+  }
+  .news-img2 h1:before{
+    content:"J";
+    color: #ff7404;
+    font-weight: 600;
+  }
+  .bg-black-news{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+  }
+  .bg-black-news h3{
+    color: #fff;
+    font-family: 'TTSeokbosangjeolB';
+  }
+  .bg-black-news h1{
+    color: #fff;
+    padding-top: 12%;
+    font-family: 'TTSeokbosangjeolB';
+  }
+  .t-img{
+    margin-bottom:10px;
+  }
+  .gal-box{
+    height: 410px;
+    padding: 0 5px !important;
+  }
+  .gal-box-b{
+    height: 250px;
+    padding: 0 5px !important;
+  }
+  .gal-img1{
+    background: url(../images/sec04-img1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 10px;
+  }
+  .gal-img2{
+    background: url(../images/sec04-img2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img3{
+    background: url(../images/sec04-img3.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img4{
+    background: url(../images/sec04-img4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 10px;
+  }
+  .gal-img5{
+    background: url(../images/sec04-img5.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img6{
+    background: url(../images/sec03-img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img7{
+    background: url(../images/sec03-img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img8{
+    background: url(../images/sec03-img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+  }
+  .gal-img9{
+    background: url(../images/sec03-img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
   }
