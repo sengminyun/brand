@@ -59,8 +59,12 @@ html {
     height: inherit;
   }
   
-
-  
+  ul{
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
   /* Header */
   header {
     position: absolute;
@@ -1998,7 +2002,7 @@ html {
     background-size: cover;
   }
   .news-sec, .gal-sec{
-    padding: 5rem !important;
+    padding: 10rem 0 !important;
   }
   .news-box{
     height: 200px;
@@ -2129,52 +2133,7 @@ html {
     background-size: cover;
     background-position:center;
   }
-  .tab-title{
-    border-bottom: 2px solid #000;
-    padding: 20px 5px;
-  }
-  .tab-1, .tab-2{
-    padding: 10px 5px;
-    cursor: pointer;
-  }
-  .tab-1{
-    border-bottom: 1px solid #ff7404;
-    box-sizing: border-box;
-  }
-  .tab-1 >p, .tab-2>p{
-    color: #000;
-    font-size: 1.3rem;
-    margin: 0;
-  }
-  .tab-1>p{
-    color: #ff7404;
-  }
-  .tab1-title{
-    border-bottom: 2px solid #000;
-    padding: 20px 5px;
-  }
-  .tab2-title{
-    border-bottom: 2px solid #000;
-    padding: 20px 5px;
-    display: none;
 
-  }
-  .tab1-title p{
-    border-left: 2px solid #ccc;
-    margin: 8px 10px;
-    padding: 0 10px;
-  }
-  .tab2-title p{
-    border-left: 2px solid #ccc;
-    margin: 8px 10px;
-    padding: 0 10px;
-  }
-  .news-t{
-    padding: 0;
-  }
-  .event{
-    display: none;
-  }
   .jb-sec{
     padding: 10rem 0;
   }
@@ -2321,4 +2280,46 @@ html {
   .place h3{
     border-bottom: 2px solid #ff7404;
     margin-bottom: 5rem;
+  }
+.event{
+  display: none;
+}
+  .news-title{
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+  }
+  .news-tab>li{
+    padding: 10px 0;
+  }
+  .tab1 h4{
+    color: #ff7404;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .tab2 h4{
+    transition: .3s;
+    cursor: pointer;
+  }
+  .tab1 h4:hover{
+    color: #ff7404;
+  }
+  .tab2 h4:hover{
+    color: #ff7404;
+  }
+  .news-t{
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+  }
+  .news-t h4{
+    padding: 0 10px;
+    /* border-right: 2px solid #000; */
+    margin: 0;
+  }
+  .news-t p{
+    padding: 0 10px;
+    margin: 0;
+    line-height: 35px;
+  }
+  .table tbody tr td{
+    cursor: pointer;
   }

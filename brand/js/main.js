@@ -305,4 +305,19 @@ $('.play').on('click',function(){
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
-})
+});
+
+$(function(){
+  $('.tab1').click(function(){
+    $('.news').css('display','block');
+    $('.tab1>h4').css('color','#ff7404');
+    $('.event').css('display','none');
+    $('.tab2>h4').css('color','#000');
+  });
+  $('.tab2').click(function(){
+    $('.news').css('display','none');
+    $('.tab2>h4').css('color','#ff7404');
+    $('.event').css('display','block');
+    $('.tab1>h4').css('color','#000');
+  });
+});
