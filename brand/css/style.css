@@ -236,10 +236,25 @@ html {
     }
     .heading-wrap p{
       font-size:14px;
+      padding: 0 !important;
+      margin: 0;
     }
     .pb-0{
       padding-top:18rem !important;
     }
+    .section{
+      padding: 3rem 0 !important;
+    }
+    .jb-title{
+      padding-top: 80% !important;
+    }
+    .jb-title-sub{
+      font-size: 2rem !important;
+    }
+    .slider-wrap:after{
+      height: 210px !important;
+    }
+
   }
 
   .section-heading .small-sub-heading {
@@ -1803,12 +1818,15 @@ html {
     .text-primary{
       font-size:1rem;
     }
-    .wrap-icon {
+    /* .wrap-icon {
       width: 60px;
       height: 60px;
-    }
+    } */
     .wrap-icon > span {
       font-size: 1.5rem;
+    }
+    .img-box{
+      height: 300px;
     }
   }
   .service-block h3 {
