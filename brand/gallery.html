@@ -43,16 +43,16 @@
                   <a class="nav-link" href="index.html">홈</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="beer.html">맥주 소개</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="janbeer.html">기업 소개</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="gallery.html">갤러리</a>
+                  <a class="nav-link" href="beer.html">맥주 소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">매장</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="news.html">뉴스</a>
+                  <a class="nav-link" href="news.html">공지사항</a>
                 </li>
               </ul>           
             </div>
@@ -61,48 +61,26 @@
       </header>
 
       <div class="slider-wrap-sub">
-        <div class="slider-item" style="background-image: url('images/gallery-main.jpg'); background-position:bottom">
-          
+        <div class="slider-item" style="background-image: url('images/gallery-main.jpg');">  
           <div class="container">
-            <div class="row slider-text justify-content-center">
-              <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up">gallery</h1>
+            <div class="row jb-text justify-content-left">
+              <div class="col-md-8 text-left col-sm-12 ">
+                <h4 class="jb-title" data-aos="fade-up">잔비어 매장 찾기</h4>
+                <h1 data-aos="fade-up">JAN BEER PLACE</h1>
               </div>
             </div>
           </div>
+  
         </div>
       <!-- END slider -->
       </div> 
-      <section class="section gal-sec">
+      <section class="section bg-light place-sec">
         <div class="container">
-          <div class="row t-img">
-            <div class="col-sm-3 gal-box">
-              <div class="gal-img1"></div>
-              <div class="gal-img2"></div>
-            </div>
-            <div class="col-sm-3 gal-box">
-              <div class="gal-img3"></div>
-            </div>
-            <div class="col-sm-3 gal-box">
-              <div class="gal-img4"></div>
-              <div class="gal-img5"></div>
-            </div>
-            <div class="col-sm-3 gal-box">
-              <div class="gal-img6"></div>
-            </div>
+          <div class="col-sm-2 place">
+            <h3 class="place-title">매장찾기</h3>
           </div>
-          <div class="row bt-img">
-            <div class="col-sm-4 gal-box-b">
-              <div class="gal-img7"></div>
-
-            </div>
-            <div class="col-sm-4 gal-box-b">
-              <div class="gal-img8"></div>
-
-            </div>
-            <div class="col-sm-4 gal-box-b">
-              <div class="gal-img9"></div>
-            </div>
+          <div class="col-sm-12 map-box">
+            <div id="map"></div>
           </div>
         </div>
       </section>
@@ -175,5 +153,110 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=41ba625bb90705a7a6a0175b21a86c3b"></script>
+    <script>
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+          mapOption = { 
+              center: new kakao.maps.LatLng(37.551268, 126.981824), // 지도의 중심좌표
+              level: 10 // 지도의 확대 레벨
+          };
+      
+      var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+       
+      // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
+      var positions = [
+          {
+              content: '<div>본점</div>', 
+              latlng: new kakao.maps.LatLng(37.597323, 126.723525)
+          },
+          {
+              content: '<div>김포 고촌점</div>', 
+              latlng: new kakao.maps.LatLng(37.599717, 126.766138)
+          },
+          {
+              content: '<div>김포 구래점</div>', 
+              latlng: new kakao.maps.LatLng(37.644663, 126.625907)
+          },
+          {
+              content: '<div>김포 마산점</div>',
+              latlng: new kakao.maps.LatLng(37.631551, 126.638575)
+          },
+          {
+              content: '<div>분당 판교도서관점</div>',
+              latlng: new kakao.maps.LatLng(37.390159, 127.092343)
+          },
+          {
+              content: '<div>분당 이매점</div>',
+              latlng: new kakao.maps.LatLng(37.405230, 127.123471)
+          },
+          {
+              content: '<div>분당 오리역점</div>',
+              latlng: new kakao.maps.LatLng(37.338573, 127.110583)
+          }
+      ];
+      
+      for (var i = 0; i < positions.length; i ++) {
+          // 마커를 생성합니다
+          var marker = new kakao.maps.Marker({
+              map: map, // 마커를 표시할 지도
+              position: positions[i].latlng // 마커의 위치
+          });
+      
+          // 마커에 표시할 인포윈도우를 생성합니다 
+          var infowindow = new kakao.maps.InfoWindow({
+              content: positions[i].content // 인포윈도우에 표시할 내용
+          });
+      
+          // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
+          // 이벤트 리스너로는 클로저를 만들어 등록합니다 
+          // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+          kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+          kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+      }
+      
+      // 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
+      function makeOverListener(map, marker, infowindow) {
+          return function() {
+              infowindow.open(map, marker);
+          };
+      }
+      
+      // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+      function makeOutListener(infowindow) {
+          return function() {
+              infowindow.close();
+          };
+      }
+      
+      /* 아래와 같이도 할 수 있습니다 */
+      /*
+      for (var i = 0; i < positions.length; i ++) {
+          // 마커를 생성합니다
+          var marker = new kakao.maps.Marker({
+              map: map, // 마커를 표시할 지도
+              position: positions[i].latlng // 마커의 위치
+          });
+      
+          // 마커에 표시할 인포윈도우를 생성합니다 
+          var infowindow = new kakao.maps.InfoWindow({
+              content: positions[i].content // 인포윈도우에 표시할 내용
+          });
+      
+          // 마커에 이벤트를 등록하는 함수 만들고 즉시 호출하여 클로저를 만듭니다
+          // 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+          (function(marker, infowindow) {
+              // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다 
+              kakao.maps.event.addListener(marker, 'mouseover', function() {
+                  infowindow.open(map, marker);
+              });
+      
+              // 마커에 mouseout 이벤트를 등록하고 마우스 아웃 시 인포윈도우를 닫습니다
+              kakao.maps.event.addListener(marker, 'mouseout', function() {
+                  infowindow.close();
+              });
+          })(marker, infowindow);
+      }
+      */
+      </script>
 </body>
 </html>
