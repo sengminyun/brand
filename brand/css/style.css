@@ -2341,3 +2341,6 @@ html {
   .table tbody tr td{
     cursor: pointer;
   }
+  .map-box{
+    text-align: center;
+  }
