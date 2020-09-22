@@ -27,6 +27,12 @@ html {
       width: 100%;
       overflow: hidden;
     }
+    .sec04-box, .review-slide{
+      display: none !important;
+    }
+  }
+  @media(max-width:1024px){
+
   }
   a {
     -webkit-transition: .3s all ease;
